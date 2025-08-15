@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Banner Section -->
+    <section class="relative min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('assects/hero-bg/dc.jpg');">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-[#002a2b] opacity-80"></div>
+        
+        <!-- Logo in top left -->
+        <div class="absolute top-4 md:top-8 left-4 md:left-8 z-20">
+            <img src="assects/logo.png" alt="Law Firm Logo" class="h-8 md:h-10 lg:h-12 object-contain">
+        </div>
+        
+        <!-- Main Content -->
+        <div class="relative z-10 flex items-center min-h-screen px-4 md:px-8 lg:px-16 py-8">
+            <div class="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-16">
+                <!-- Vertical white line separator on left - hidden on mobile -->
+                <div class="hidden lg:block w-px bg-white h-80 opacity-60"></div>
+                
+                <!-- Left Side - Content -->
+                <div class="flex-1 max-w-3xl text-center lg:text-left">
+                    <!-- Subtitle -->
+                    <p class="text-gray-300 text-base md:text-lg lg:text-xl mb-4 md:mb-6 font-light">
+                        ERP Built for Government Contractors
+                    </p>
+                    
+                    <!-- Main Headline -->
+                    <h1 class="text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight mb-6 md:mb-8">
+                        DCAA-Compliant Accounting + Project Management – All in One Platform<span class="text-xs md:text-sm align-top">™</span>
+                    </h1>
+                    
+                    <!-- Services -->
+                    <p class="text-gray-300 text-base md:text-lg lg:text-xl mb-8 md:mb-12 font-light">
+                        Business Law | Litigation | Health Law | Probate<br class="hidden md:block">
+                        <span class="md:hidden"> | </span>Litigation | OSHA Defense
+                    </p>
+                    
+                    <!-- CTA Button -->
+                    <button class="bg-[#074e94] hover:bg-[#063d7a] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-medium flex items-center gap-3 transition-colors duration-200 mx-auto lg:mx-0">
+                        TALK TO OUR TEAM TODAY
+                        <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Right Side - Calendar -->
+                <div class="flex-shrink-0 w-full max-w-sm lg:max-w-xs">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-white border-opacity-20">
+                        <!-- Calendar Header -->
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-white font-semibold text-lg">January 2025</h3>
+                            <div class="flex gap-2">
+                                <button class="text-white hover:text-gray-300 p-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                </button>
+                                <button class="text-white hover:text-gray-300 p-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Calendar Grid -->
+                        <div class="grid grid-cols-7 gap-1 text-center">
+                            <!-- Day Headers -->
+                            <div class="text-gray-300 text-xs font-medium py-2">S</div>
+                            <div class="text-gray-300 text-xs font-medium py-2">M</div>
+                            <div class="text-gray-300 text-xs font-medium py-2">T</div>
+                            <div class="text-gray-300 text-xs font-medium py-2">W</div>
+                            <div class="text-gray-300 text-xs font-medium py-2">T</div>
+                            <div class="text-gray-300 text-xs font-medium py-2">F</div>
+                            <div class="text-gray-300 text-xs font-medium py-2">S</div>
+                            
+                            <!-- Calendar Days -->
+                            <div class="text-gray-500 text-sm py-2">29</div>
+                            <div class="text-gray-500 text-sm py-2">30</div>
+                            <div class="text-gray-500 text-sm py-2">31</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">1</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">2</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">3</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">4</div>
+                            
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">5</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">6</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">7</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">8</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">9</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">10</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">11</div>
+                            
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">12</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">13</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">14</div>
+                            <div class="bg-red-700 text-white text-sm py-2 rounded font-semibold">15</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">16</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">17</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">18</div>
+                            
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">19</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">20</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">21</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">22</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">23</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">24</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">25</div>
+                            
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">26</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">27</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">28</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">29</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">30</div>
+                            <div class="text-white text-sm py-2 hover:bg-white hover:bg-opacity-20 rounded cursor-pointer">31</div>
+                            <div class="text-gray-500 text-sm py-2">1</div>
+                        </div>
+                        
+                        <!-- Calendar Footer -->
+                        <div class="mt-4 pt-4 border-t border-white border-opacity-20">
+                            <p class="text-gray-300 text-xs text-center">Schedule a Consultation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </section>
+
+    <!-- Expandable Sections -->
+    <div class="bg-gray-50 min-h-screen py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Left Side - ERP Content -->
+                <div class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
+                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                        ERP Software Built for Government Contractors
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl text-[#074e94] font-semibold mb-6">
+                        DCAA-Compliant Accounting + Project Management – All in One Platform
+                    </h2>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        WrkPlan is the all-in-one ERP system trusted by growing government contractors to stay DCAA-compliant, manage projects, and simplify accounting — without the bloated costs or complexity of legacy systems.
+                    </p>
+                </div>
+
+                <!-- Right Side - Key Benefits -->
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6 sm:p-8">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">Key Benefits</h2>
+                    
+                    <!-- Why GovCons Choose WrkPlan -->
+                    <div class="border-b border-gray-200">
+                        <button 
+                            class="w-full py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200"
+                            onclick="toggleSection('govcons')"
+                        >
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Why GovCons Choose WrkPlan</h3>
+                            <span id="govcons-icon" class="text-2xl text-gray-500 transition-transform duration-200">+</span>
+                        </button>
+                        <div id="govcons-content" class="hidden pb-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-blue-600 font-semibold"></span>
+                                    <span><strong>DCAA-Compliance</strong> – Built from the ground up for federal requirements</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-blue-600 font-semibold"></span>
+                                    <span><strong>All-in-One System</strong> – Say goodbye to disconnected tools</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-blue-600 font-semibold"></span>
+                                    <span><strong>Customizable & Scalable</strong> – Grows with your business</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-blue-600 font-semibold"></span>
+                                    <span><strong>Real-Time Financial Reporting</strong> – Always know where your projects stand</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-blue-600 font-semibold"></span>
+                                    <span><strong>Integrated Time & Expense</strong> – Easy, compliant timekeeping</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-blue-600 font-semibold"></span>
+                                    <span><strong>User-Friendly Interface</strong> – Loved by finance and operations teams</span>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-blue-600 font-semibold"></span>
+                                    <span><strong>Dedicated Support</strong> – Fast answers from real humans</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="border-b border-gray-200">
+                        <button 
+                            class="w-full py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200"
+                            onclick="toggleSection('features')"
+                        >
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Take Control of Your Contracts & Costs & Compliance</h3>
+                            <span id="features-icon" class="text-2xl text-gray-500 transition-transform duration-200">+</span>
+                        </button>
+                        <div id="features-content" class="hidden pb-6">
+                            <p class="text-gray-700 mb-6">WrkPlan simplifies every stage of the government contracting lifecycle:</p>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-green-600 font-bold">✓</span>
+                                    <div>
+                                        <strong class="text-gray-900">Contract Management</strong>
+                                        <span class="text-gray-700"> - Manage CPFF, T&M, and Fixed Price contracts with confidence.</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-green-600 font-bold">✓</span>
+                                    <div>
+                                        <strong class="text-gray-900">Project Accounting & Billing</strong>
+                                        <span class="text-gray-700"> – Track contract costs automatically ensuring accurate billing & audit-readiness.</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-green-600 font-bold">✓</span>
+                                    <div>
+                                        <strong class="text-gray-900">Time & Expense Tracking</strong>
+                                        <span class="text-gray-700"> - DCAA-compliant timesheets and expense reports built right in.</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-green-600 font-bold">✓</span>
+                                    <div>
+                                        <strong class="text-gray-900">Budgeting & Forecasting</strong>
+                                        <span class="text-gray-700"> - Plan by project, department, or cost pool with powerful forecasting tools.</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-green-600 font-bold">✓</span>
+                                    <div>
+                                        <strong class="text-gray-900">Incurred Cost Submission</strong>
+                                        <span class="text-gray-700"> - Auto-generate Schedules A–O using data already in the system.</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-green-600 font-bold">✓</span>
+                                    <div>
+                                        <strong class="text-gray-900">Payroll & HR Integration</strong>
+                                        <span class="text-gray-700"> - Sync employee data, benefits, and payroll processing seamlessly.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support Section -->
+                    <div>
+                        <button 
+                            class="w-full py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200"
+                            onclick="toggleSection('support')"
+                        >
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Get the Support You Deserve</h3>
+                            <span id="support-icon" class="text-2xl text-gray-500 transition-transform duration-200">+</span>
+                        </button>
+                        <div id="support-content" class="hidden pb-6">
+                            <p class="text-gray-700 mb-6">From onboarding to daily operations, our team is here to help you succeed.</p>
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h4 class="font-semibold text-gray-900 mb-4">Streamlined Implementation</h4>
+                                <div class="space-y-3 text-gray-700">
+                                    <div class="flex items-start space-x-3">
+                                        <span class="text-blue-600 font-semibold">•</span>
+                                        <span>Up and running in a few weeks, not months</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="text-blue-600 font-semibold">•</span>
+                                        <span>Ongoing support at no additional cost</span>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <span class="text-blue-600 font-semibold">•</span>
+                                        <span>One on one training from experienced GovCon professionals</span>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <p class="text-gray-700 mb-4">Talk to our team and see WrkPlan in action.</p>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200">
+                                        Schedule Your Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId + '-content');
+            const icon = document.getElementById(sectionId + '-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '−';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
