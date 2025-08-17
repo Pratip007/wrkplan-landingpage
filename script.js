@@ -13,22 +13,25 @@ function toggleFeature(featureId) {
     const content = document.getElementById(featureId + '-content');
     const icon = document.getElementById(featureId + '-icon');
     
-    // Hide all images first
-    const allImages = [
-        'contract-management-image',
-        'project-accounting-image',
-        'time-expense-image',
-        'budgeting-image',
-        'incurred-cost-image',
-        'payroll-hr-image'
-    ];
-    
-    allImages.forEach(imgId => {
-        const img = document.getElementById(imgId);
-        if (img) {
-            img.classList.add('hidden');
-        }
-    });
+    // Only hide images when opening a new toggle, not when closing
+    if (content.classList.contains('hidden')) {
+        // Hide all images first when opening a new toggle
+        const allImages = [
+            'contract-management-image',
+            'project-accounting-image',
+            'time-expense-image',
+            'budgeting-image',
+            'incurred-cost-image',
+            'payroll-hr-image'
+        ];
+        
+        allImages.forEach(imgId => {
+            const img = document.getElementById(imgId);
+            if (img) {
+                img.classList.add('hidden');
+            }
+        });
+    }
     
     if (content.classList.contains('hidden')) {
         // Close all other dropdowns first
