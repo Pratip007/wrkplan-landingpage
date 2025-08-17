@@ -78,17 +78,8 @@ function toggleFeature(featureId) {
         content.classList.add('hidden');
         icon.textContent = '+';
         
-        // Hide corresponding image
-        const image = document.getElementById(featureId + '-image');
-        if (image) {
-            image.classList.add('hidden');
-        }
-        
-        // Show default image (contract management)
-        const defaultImage = document.getElementById('contract-management-image');
-        if (defaultImage) {
-            defaultImage.classList.remove('hidden');
-        }
+        // Keep the current image visible - don't change it when closing
+        // The image will only change when a different toggle is opened
     }
 }
 
