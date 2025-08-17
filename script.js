@@ -1,12 +1,4 @@
-// Mobile menu toggle functionality
-function toggleMobileMenu() {
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.remove('hidden');
-    } else {
-        mobileMenu.classList.add('hidden');
-    }
-}
+
 
 // Feature section toggle functionality
 function toggleFeature(featureId) {
