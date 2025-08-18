@@ -1,5 +1,17 @@
 
 
+// Add custom CSS for mobile padding adjustments
+const style = document.createElement('style');
+style.textContent = `
+    @media (max-width: 768px) {
+        #services {
+            padding-top: 4rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+    }
+`;
+document.head.appendChild(style);
+
 // Feature section toggle functionality
 function toggleFeature(featureId) {
     const content = document.getElementById(featureId + '-content');
